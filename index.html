@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-   
+	
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+		<meta name="google-site-verification" content="FlO3S41gGlIMbLghNGlSGwwFug7K5IuZF9hNVZW7y7w" />
 		<title>Squadron Design And Engineering Pvt Ltd</title>
 		<meta name="description" content="Free Bootstrap 4 Theme by ProBootstrap.com">
 		<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
@@ -14,6 +13,7 @@
 	   .pb_icon_v1
 	   {font-size:90px;
 	   }
+	   
        #map {
 	   
         height: 400px;
@@ -28,7 +28,10 @@
 
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
     
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
 
@@ -435,7 +438,7 @@ pioneering role in professionalizing Education through its different training pr
             <h2 class="mt-0 heading-border-top font-weight-normal">Projects and Services</h2>
          <p>SQUADRON is a leading academic project solution providing company in Bangalore, INDIA. We Provide Final Year academic Projects for all branches of Engineering, Diploma and M-Tech Students All the projects are developed according to IEEE Standards. We offer academic projects at various levels ranging from graduates to masters (Diploma, BE, M. Tech, MCA, M. Sc, BCA (CS/IT)).</p>
 <p>As a part of our vision to provide hands-on experience to the students we invite them from the stream of Aeronautical,Electronics, Electricals, Instrumentation, Computer Science, Information Science and Mechanical final year engineering students to carry out their academic project works at our institute.
-</p><p>WE CURRENTLY OFFER LATEST PROJECTS IN THE FOLLOWING AREAS:WE CURRENTLY OFFER LATEST PROJECTS IN THE FOLLOWING AREAS: </p>
+		  </p><p><b>WE CURRENTLY OFFER LATEST PROJECTS IN THE FOLLOWING AREAS:</b> </p>
 <p> <ul align="left">
 <li> EMBEDDED PROJECTS</li>
  
@@ -700,37 +703,55 @@ Lab:
         
         <div class="row">
           <div class="col-md-8 pr-md-5 pr-sm-0 mb-4">
-            <form method="post"  name="myemailform" action="form-to-email.php">
+            <form method="post"  name="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScWbCCW-Mr35OB-QKAsewCao49G7OOQSsgJWNKF_AMeU2YTtQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
               <div class="row">
                 <div class="col-md">
                   <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control p-3 rounded-0" name="name" id="name">
+                    <input type="text" class="form-control p-3 rounded-0" name="entry.180318624" id="entry.180318624">
                   </div>
                 </div>
                 <div class="col-md">
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" class="form-control p-3 rounded-0"  name="email" id="email">
+                    <input type="text" class="form-control p-3 rounded-0"  name="entry.1327860442" id="entry.1327860442">
                   </div>
+															 
+														    
                 </div>
               </div>
+		    <div class="form-group">
+                    <label for="email">Contact #</label>
+                    <input type="text" class="form-control p-3 rounded-0"  name="entry.1334742917" id="entry.1334742917">
+                  </div>
               
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea cols="30" rows="10" class="form-control p-3 rounded-0"  name="message" id="message"></textarea>
+                <textarea cols="30" rows="10" class="form-control p-3 rounded-0"  name="entry.1386594994" id="entry.1386594994"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" name='submit' onclick="conf()" class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0" align="center"value="Send Enquiry">
               </div>
 			  <div id="map"></div>
             </form>
+				       
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+												       
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 			
 <script type="text/javascript">
-function conf()
-{
-alert("Thanks for your enquiry");
-}
+function conf(){
+	swal("Thank You!", "We Will Get Back To You Soon!", "success", {
+  button: "Aww yiss!",
+});}
 </script>
 			
 <script language="JavaScript">
@@ -747,7 +768,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
             <ul class="pb_contact_details_v1">
               <li>
                 <span class="text-uppercase">Email</span>
-                squadronde@gmail.com
+                squadrondesign@gmail.com
               </li>
               <li>
                 <span class="text-uppercase">Phone</span>
@@ -788,9 +809,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
         });
       }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
+    
 	</section>
     <!-- END section -->
 
@@ -855,7 +874,8 @@ marker.setMap(map);
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.easing.1.3.js"></script>
 
