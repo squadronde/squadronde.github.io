@@ -699,31 +699,43 @@ Lab:
         
         <div class="row">
           <div class="col-md-8 pr-md-5 pr-sm-0 mb-4">
-            <form method="post"  name="gform" action="https://formspree.io/squadrondesign@gmail.com">
+            <form method="post"  name="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSdPNv2vq-dPctrUXKRFGp-firxseUfMiOc-cGVKxd4IGCjr1Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
               <div class="row">
                 <div class="col-md">
                   <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control p-3 rounded-0" name="name" id="name">
+                    <input type="text" class="form-control p-3 rounded-0" name="entry.1390477460" id="entry.1390477460">
                   </div>
                 </div>
                 <div class="col-md">
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" class="form-control p-3 rounded-0"  name="_replyto" id="email">
+                    <input type="text" class="form-control p-3 rounded-0"  name="entry.74140450" id="entry.74140450">
                   </div>
                 </div>
               </div>
               
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea cols="30" rows="10" class="form-control p-3 rounded-0"  name="message" id="message"></textarea>
+                <textarea cols="30" rows="10" class="form-control p-3 rounded-0"  name="entry.1109473471" id="entry.1109473471"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" name='submit' onclick="conf()" class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0" align="center"value="Send Enquiry">
               </div>
 			  <div id="map"></div>
             </form>
+				       
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+												       
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 			
 <script type="text/javascript">
 function conf()
